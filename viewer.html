@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小不丢API 文档</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked@11.1.1/marked.min.js"></script>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <nav class="top-navbar">
+        <a href="index.html" class="top-navbar-brand">
+            <img src="images/小不丢AI网站logo设计 (1).png" alt="小不丢API Logo" width="32" height="32">
+            <span>小不丢API 接口对接</span>
+        </a>
+        <ul class="top-navbar-menu">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="viewer.html" class="active">文档</a></li>
+            <li><a href="https://api.augmentproxy.com/login" target="_blank">立即登录</a></li>
+            <li><a href="#" onclick="alert('请访问官网注册'); return false;">立即注册</a></li>
+            <li><a href="https://api.augmentproxy.com/token" target="_blank">令牌管理</a></li>
+            <li><a href="https://api.augmentproxy.com/topup" target="_blank">余额管理</a></li>
+            <li>
+                <button id="themeToggle" class="theme-toggle" aria-label="切换主题">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <nav class="nav-menu" id="docNav">
+                <!-- 动态生成导航 -->
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <header class="page-header">
+                <h1 id="pageTitle">小不丢API 接口对接</h1>
+                <p id="pageDesc">AI接口聚合管理服务 - 完整文档</p>
+            </header>
+
+            <div id="content" class="content-section">
+                <h2>欢迎使用小不丢API</h2>
+                <p>请从左侧菜单选择文档查看。</p>
+                <p>本文档提供完整的API接口说明和使用指南，包括：</p>
+                <ul>
+                    <li>聊天模型接口（ChatGPT、Claude、Gemini等）</li>
+                    <li>图像生成接口（DALL·E、Midjourney、FLUX等）</li>
+                    <li>视频生成接口（Sora、Luma、Runway等）</li>
+                    <li>音频处理接口</li>
+                    <li>各种开发语言的配置示例</li>
+                    <li>插件和软件集成教程</li>
+                </ul>
+            </div>
+
+            <footer class="page-footer">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> 小不丢API. 保留所有权利.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="docs-loader.js"></script>
+</body>
+</html>
